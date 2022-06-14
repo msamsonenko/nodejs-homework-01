@@ -12,12 +12,6 @@
 		"phone": "(294) 840-6685"
 	},
 	{
-		"id": "3",
-		"name": "Kennedy Lane",
-		"email": "mattis.Cras@nonenimMauris.net",
-		"phone": "(542) 451-7038"
-	},
-	{
 		"id": "4",
 		"name": "Wylie Pope",
 		"email": "est@utquamvel.net",
@@ -42,12 +36,6 @@
 		"phone": "(715) 598-5792"
 	},
 	{
-		"id": "8",
-		"name": "Simon Morton",
-		"email": "dui.Fusce.diam@Donec.com",
-		"phone": "(233) 738-2360"
-	},
-	{
 		"id": "9",
 		"name": "Thomas Lucas",
 		"email": "nec@Nulla.com",
@@ -58,5 +46,17 @@
 		"name": "Alec Howard",
 		"email": "Donec.elementum@scelerisquescelerisquedui.net",
 		"phone": "(748) 206-2688"
+	},
+	{
+		"name": "Bibot Rusty",
+		"email": "brusty@gmail.com",
+		"phone": "(000) 010-0011",
+		"id": "d44496f8-f357-4ad7-90a3-25b1f40a9a98"
+	},
+	{
+		"name": "Mango",
+		"email": "mango@gmail.com",
+		"phone": "322-22-22",
+		"id": "6557da45-c411-4788-9bd4-495ad187e119"
 	}
 ]

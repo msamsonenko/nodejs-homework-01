@@ -1,15 +1,24 @@
 {
-  "name": "nodejs-homework-01",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^2.0.16"
-  }
+	"name": "nodejs-homework-01",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index",
+		"start:dev": "nodemon index"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"nodemon": "^2.0.16"
+	},
+	"dependencies": {
+		"colors": "^1.4.0",
+		"commander": "^9.3.0",
+		"commonjs": "^0.0.1",
+		"uuid": "^8.3.2"
+	},
+	"type": "commonjs"
 }
