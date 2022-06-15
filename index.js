@@ -6,6 +6,7 @@ const {
 } = require("./contacts");
 const { Command } = require("commander");
 const program = new Command();
+console.log(program);
 program
 	.option("-a, --action <type>", "choose action")
 	.option("-i, --id <type>", "user id")
@@ -32,6 +33,9 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
 			break;
 		case "remove":
 			const contactToRemove = await removeContact(id);
+			if (!contactToRemove) {
+				throw new Error(`Contact with id=${id} not found`);
+			}
 			console.log(`Removed contact with id=${id}: `, contactToRemove);
 			break;
 		case "add":
@@ -43,17 +47,6 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
 	}
 };
 
-invokeAction(argv);
-
-// const newContact = {
-// 	name: "Bibot Rusty",
-// 	email: "brusty@gmail.com",
-// 	phone: "(000) 010-0011",
-// };
-
-// invokeAction({
-// 	action: "add",
-// 	name: "Bibot Rusty",
-// 	email: "brusty@gmail.com",
-// 	phone: "(000) 010-0011",
-// });
+(async () => {
+	await invokeAction(argv);
+})();
